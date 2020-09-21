@@ -6,12 +6,10 @@
         <groupId>com.teavamc</groupId>
         <artifactId>vamc-sam</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>vamc-sam-api</artifactId>
-
+    <name>vamc-sam-api</name>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>

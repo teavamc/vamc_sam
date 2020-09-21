@@ -6,11 +6,10 @@
         <groupId>com.teavamc</groupId>
         <artifactId>vamc-sam</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>vamc-sam-manager</artifactId>
+    <artifactId>vamc-sam-core</artifactId>
+    <name>vamc-sam-core</name>
 
 
 </project>

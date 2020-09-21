@@ -17,12 +17,13 @@
     </properties>
 
     <modules>
-        <module>start</module>
+        <module>vamc-sam-start</module>
         <module>vamc-sam-api</module>
         <module>vamc-sam-dao</module>
-        <module>vamc-sam-manager</module>
+        <module>vamc-sam-core</module>
         <module>vamc-sam-service</module>
         <module>vamc-sam-web</module>
+        <module>vamc-sam-deploy</module>
     </modules>
 
     <dependencyManagement>
