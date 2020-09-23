@@ -1,4 +1,4 @@
-package com.teavamc.vamcsam.dao.dataobject;
+package com.teavamc.vamcsam.dao.entity;
 
 import lombok.Data;
 

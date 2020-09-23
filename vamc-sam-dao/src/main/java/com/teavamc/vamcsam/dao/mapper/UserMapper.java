@@ -1,17 +1,15 @@
 package com.teavamc.vamcsam.dao.mapper;
 
-import com.teavamc.vamcsam.dao.dataobject.UserDO;
-import org.apache.ibatis.annotations.Mapper;
+import com.teavamc.vamcsam.dao.entity.UserDO;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
-@Mapper
 public interface UserMapper {
 
     UserDO getByName(String name);
 
     UserDO getById(Long id);
 
-    Long insert(UserDO userDO);
+    void insert(UserDO userDO);
 }

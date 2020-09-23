@@ -1,21 +1,25 @@
 package com.teavamc.vamcsam.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.alibaba.fastjson.JSONObject;
+import com.teavamc.vamcsam.dao.mapper.UserMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.cglib.beans.BeanCopier;
 import org.springframework.stereotype.Component;
 
-import com.teavamc.vamcsam.dao.dataobject.UserDO;
-import com.teavamc.vamcsam.dao.mapper.UserMapper;
+import com.teavamc.vamcsam.dao.entity.UserDO;
 import com.teavamc.vamcsam.api.UserService;
 import com.teavamc.vamcsam.api.model.UserModel;
+
+import javax.annotation.Resource;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
+@Slf4j
 @Component
 public class UserServiceImpl implements UserService {
 
-    @Autowired
+    @Resource
     private UserMapper userMapper;
 
     private static final BeanCopier copier = BeanCopier.create(UserModel.class, UserDO.class, false);
@@ -26,11 +30,11 @@ public class UserServiceImpl implements UserService {
     }
 
     public UserModel addUser(UserModel user) {
+        log.info(JSONObject.toJSONString(user));
         UserDO userDO = new UserDO();
-        copier.copy(user, userDO, null);
-
-        Long id = userMapper.insert(userDO);
-        user.setId(id);
+        userDO.setName(user.getName());
+        userDO.setAge(user.getAge());
+        userMapper.insert(userDO);
         return user;
     }
 }

@@ -2,25 +2,30 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.teavamc</groupId>
         <artifactId>vamc-sam</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.2</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
-    <name>vamc-sam-deploy</name>
+
     <artifactId>vamc-sam-deploy</artifactId>
+    <name>vamc-sam-deploy</name>
+
     <properties>
         <maven.test.skip>true</maven.test.skip>
         <maven.javadoc.skip>true</maven.javadoc.skip>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.teavamc</groupId>
             <artifactId>vamc-sam-start</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.2</version>
         </dependency>
     </dependencies>
+
     <build>
         <finalName>vamc-sam</finalName>
         <plugins>

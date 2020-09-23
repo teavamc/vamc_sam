@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ /*
+  ~ * Copyright 2020 byai.com All right reserved. This software is the
+  ~ * confidential and proprietary information of byai.com ("Confidential
+  ~ * Information"). You shall not disclose such Confidential Information and shall
+  ~ * use it only in accordance with the terms of the license agreement you entered
+  ~ * into with byai.com.
+  ~ */
+  -->
+
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="SLF4J"/>
+    </settings>
+
+    <typeAliases>
+        <package name="com.teavamc.vamcsam.dao.entity"/>
+    </typeAliases>
+
+</configuration>
