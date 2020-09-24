@@ -2,10 +2,7 @@ package com.teavamc.vamcsam.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.teavamc.vamcsam.api.UserService;
 import com.teavamc.vamcsam.api.model.UserModel;
@@ -32,5 +29,10 @@ public class UserController {
         user.setName(name);
         user.setAge(age);
         return userService.addUser(user);
+    }
+
+    @PostMapping("/error")
+    public void throwError(@RequestBody String string) throws Exception {
+        throw new Exception();
     }
 }

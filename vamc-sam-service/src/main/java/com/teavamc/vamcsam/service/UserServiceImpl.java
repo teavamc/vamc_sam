@@ -2,6 +2,8 @@ package com.teavamc.vamcsam.service;
 
 import com.alibaba.fastjson.JSONObject;
 import com.teavamc.vamcsam.dao.mapper.UserMapper;
+import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cglib.beans.BeanCopier;
 import org.springframework.stereotype.Component;
