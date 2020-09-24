@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
-import com.teavamc.vamcsam.api.UserService;
-import com.teavamc.vamcsam.api.model.UserModel;
+import com.teavamc.vamcsam.api.local.UserService;
+import com.teavamc.vamcsam.api.local.model.UserModel;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>

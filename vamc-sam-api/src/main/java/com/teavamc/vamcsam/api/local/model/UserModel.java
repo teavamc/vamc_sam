@@ -1,4 +1,4 @@
-package com.teavamc.vamcsam.api.model;
+package com.teavamc.vamcsam.api.local.model;
 
 import lombok.Data;
 
