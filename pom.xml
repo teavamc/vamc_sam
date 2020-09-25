@@ -19,6 +19,8 @@
         <vam.sam.api>0.0.2</vam.sam.api>
         <vam.sam.core>0.0.2</vam.sam.core>
         <vam.sam.dubbo.untils>0.0.2</vam.sam.dubbo.untils>
+        <vam.sam.start>0.0.2</vam.sam.start>
+        <vam.sam.dao>0.0.2</vam.sam.dao>
     </properties>
 
     <modules>
@@ -34,6 +36,37 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.teavamc</groupId>
+                <artifactId>vamc-sam-start</artifactId>
+                <version>${vam.sam.start}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.teavamc</groupId>
+                <artifactId>vamc-sam-api</artifactId>
+                <version>${vam.sam.api}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.teavamc</groupId>
+                <artifactId>vamc-sam-core</artifactId>
+                <version>${vam.sam.core}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.teavamc</groupId>
+                <artifactId>vamc-sam-dubbo-utils</artifactId>
+                <version>${vam.sam.dubbo.untils}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.teavamc</groupId>
+                <artifactId>vamc-sam-dao</artifactId>
+                <version>${vam.sam.dao}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot</artifactId>
+                <version>2.3.0.RELEASE</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -53,14 +86,41 @@
                 <version>2.1.2</version>
                 <type>jar</type>
             </dependency>
-
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>2.0.1.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>6.1.5.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>1.9.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.11</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.8.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.30</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>1.2.73</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/com.alibaba/dubbo -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
@@ -72,29 +132,38 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-
             <dependency>
-                <groupId>com.teavamc</groupId>
-                <artifactId>vamc-sam-api</artifactId>
-                <version>${vam.sam.api}</version>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>2.7.8</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
-
             <dependency>
-                <groupId>com.teavamc</groupId>
-                <artifactId>vamc-sam-core</artifactId>
-                <version>${vam.sam.core}</version>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-framework</artifactId>
+                <version>4.2.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
-
             <dependency>
-                <groupId>com.teavamc</groupId>
-                <artifactId>vamc-sam-dubbo-utils</artifactId>
-                <version>${vam.sam.dubbo.untils}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>1.7.30</version>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>4.2.0</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
         </dependencies>

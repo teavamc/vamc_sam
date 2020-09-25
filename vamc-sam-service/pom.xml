@@ -14,55 +14,31 @@
         <dependency>
             <groupId>com.teavamc</groupId>
             <artifactId>vamc-sam-dao</artifactId>
-            <version>${project.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.teavamc</groupId>
             <artifactId>vamc-sam-api</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.teavamc</groupId>
             <artifactId>vamc-sam-core</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.teavamc</groupId>
             <artifactId>vamc-sam-dubbo-utils</artifactId>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-framework -->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-framework</artifactId>
-            <version>4.2.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-recipes</artifactId>
-            <version>4.2.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
-
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
