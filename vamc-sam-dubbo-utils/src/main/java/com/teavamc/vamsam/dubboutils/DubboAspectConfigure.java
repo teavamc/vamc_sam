@@ -1,13 +1,12 @@
+package com.teavamc.vamsam.dubboutils;
+
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Method;
-
 /**
  * @author 墨诚 mocheng@byai.com
- * @Package annotation
+ * @Package com.teavamc.vamsam.dubboutils.annotation
  * @date 2020/9/24 16:54
  */
 @Configuration

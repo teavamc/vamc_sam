@@ -13,7 +13,7 @@
         </encoder>
         <!-- ThresholdFilter 对日志级别小于 level 的会进行过滤-->
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-            <level>INFO</level>
+            <level>DEBUG</level>
         </filter>
     </appender>
 
@@ -65,17 +65,39 @@
         </encoder>
     </appender>
 
+    <!-- 错误日志 appender ： 按照每天生成日志文件 -->
+    <appender name="VAMC-SAM" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <!-- 日志名称 -->
+        <file>${baseDirectory}/vamc-sam.log</file>
+        <!-- 每天生成一个日志文件，保存30天的日志文件 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名:按天回滚 daily -->
+            <FileNamePattern>${baseDirectory}/vamc-sam-%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--日志文件保留天数-->
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+            <!-- 编码 -->
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
 
 
     <logger name="com.teavamc.vamcsam" additivity="false">
         <appender-ref ref="ASYNC"/>
         <appender-ref ref="ERROR"/>
+        <appender-ref ref="VAMC-SAM"/>
     </logger>
 
     <root level="info">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="ASYNC"/>
         <appender-ref ref="ERROR"/>
+        <appender-ref ref="VAMC-SAM"/>
     </root>
 
 </configuration>

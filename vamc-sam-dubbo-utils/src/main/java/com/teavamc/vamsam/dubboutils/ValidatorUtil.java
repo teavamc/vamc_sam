@@ -1,4 +1,4 @@
-
+package com.teavamc.vamsam.dubboutils;
 
 import org.hibernate.validator.HibernateValidator;
 

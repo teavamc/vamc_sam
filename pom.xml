@@ -65,6 +65,12 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>2.6.9</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
@@ -93,57 +99,6 @@
 
         </dependencies>
     </dependencyManagement>
-
-<!--    &lt;!&ndash;    指定仓库 &ndash;&gt;-->
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>nexus</id>-->
-<!--            <name>nexus</name>-->
-<!--            <url>http://nexus.teavamc.com/nexus/content/groups/public/</url>-->
-<!--            <releases>-->
-<!--                <enabled>true</enabled>-->
-<!--            </releases>-->
-<!--            <snapshots>-->
-<!--                <enabled>true</enabled>-->
-<!--            </snapshots>-->
-<!--        </repository>-->
-<!--        <repository>-->
-<!--            <id>alimaven</id>-->
-<!--            <name>aliyun maven</name>-->
-<!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
-<!--        </repository>-->
-<!--        <repository>-->
-<!--            <id>central-repos</id>-->
-<!--            <name>Central Repository</name>-->
-<!--            <url>http://repo.maven.apache.org/maven2</url>-->
-<!--        </repository>-->
-<!--    </repositories>-->
-
-
-<!--    指定仓库 用于三方插件-->
-<!--    <pluginRepositories>-->
-<!--        <pluginRepository>-->
-<!--            <id>nexus</id>-->
-<!--            <name>nexus</name>-->
-<!--            <url>http://nexus.teavamc.com/nexus/content/groups/public/</url>-->
-<!--            <releases>-->
-<!--                <enabled>true</enabled>-->
-<!--            </releases>-->
-<!--            <snapshots>-->
-<!--                <enabled>true</enabled>-->
-<!--            </snapshots>-->
-<!--        </pluginRepository>-->
-<!--        <pluginRepository>-->
-<!--            <id>alimaven</id>-->
-<!--            <name>aliyun maven</name>-->
-<!--            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
-<!--        </pluginRepository>-->
-<!--        <pluginRepository>-->
-<!--            <id>central-repos</id>-->
-<!--            <name>Central Repository</name>-->
-<!--            <url>http://repo.maven.apache.org/maven2</url>-->
-<!--        </pluginRepository>-->
-<!--    </pluginRepositories>-->
 
 <!--    分 releases 和 snapshot 来 deploy-->
     <distributionManagement>

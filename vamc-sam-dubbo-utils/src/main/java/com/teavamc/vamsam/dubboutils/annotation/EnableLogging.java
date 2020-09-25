@@ -1,4 +1,4 @@
-import org.springframework.context.annotation.Import;
+package com.teavamc.vamsam.dubboutils.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -6,10 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 异常封装为标准返回值
+ * 记录返回值（不加注解时只记录方法及入参）
  */
-@Target({ ElementType.TYPE })
+@Target({ ElementType.METHOD, ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
-@Import({ DubboAspectConfigure.class })
-public @interface EnableDubboUtil {
+public @interface EnableLogging {
 }

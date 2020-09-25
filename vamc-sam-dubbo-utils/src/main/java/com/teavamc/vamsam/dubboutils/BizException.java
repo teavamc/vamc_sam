@@ -1,3 +1,5 @@
+package com.teavamc.vamsam.dubboutils;
+
 import lombok.Getter;
 
 /**

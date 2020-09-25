@@ -1,10 +1,12 @@
-import annotation.DisableLogging;
-import annotation.EnableErrorHandle;
-import annotation.EnableLogging;
-import annotation.EnableValidation;
+package com.teavamc.vamsam.dubboutils;
+
 import com.google.gson.Gson;
 import com.teavamc.vamcsam.core.common.response.BaseResult;
 import com.teavamc.vamcsam.core.common.response.SimpleResult;
+import com.teavamc.vamsam.dubboutils.annotation.DisableLogging;
+import com.teavamc.vamsam.dubboutils.annotation.EnableErrorHandle;
+import com.teavamc.vamsam.dubboutils.annotation.EnableLogging;
+import com.teavamc.vamsam.dubboutils.annotation.EnableValidation;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.BooleanUtils;
