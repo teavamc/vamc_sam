@@ -15,12 +15,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>dubbo</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.teavamc</groupId>
             <artifactId>vamc-sam-core</artifactId>
