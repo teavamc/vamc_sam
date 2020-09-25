@@ -1,4 +1,4 @@
-package com.teavamc.vamcsam.service;
+package com.teavamc.vamcsam.service.local;
 
 import com.alibaba.fastjson.JSONObject;
 import com.teavamc.vamcsam.dao.mapper.UserMapper;

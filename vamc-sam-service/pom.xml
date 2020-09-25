@@ -13,16 +13,6 @@
     <dependencies>
         <dependency>
             <groupId>com.teavamc</groupId>
-            <artifactId>vamc-sam-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.teavamc</groupId>
-            <artifactId>vamc-sam-core</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.teavamc</groupId>
             <artifactId>vamc-sam-dao</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -30,6 +20,16 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.teavamc</groupId>
+            <artifactId>vamc-sam-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.teavamc</groupId>
+            <artifactId>vamc-sam-core</artifactId>
         </dependency>
     </dependencies>
 

@@ -16,6 +16,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
+        <vam.sam.api>0.0.2</vam.sam.api>
+        <vam.sam.core>0.0.2</vam.sam.core>
+        <vam.sam.dubbo.untils>0.0.2</vam.sam.dubbo.untils>
     </properties>
 
     <modules>
@@ -26,6 +29,7 @@
         <module>vamc-sam-service</module>
         <module>vamc-sam-web</module>
         <module>vamc-sam-deploy</module>
+        <module>vamc-sam-dubbo-utils</module>
     </modules>
 
     <dependencyManagement>
@@ -61,6 +65,30 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>2.6.9</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.teavamc</groupId>
+                <artifactId>vamc-sam-api</artifactId>
+                <version>${vam.sam.api}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.teavamc</groupId>
+                <artifactId>vamc-sam-core</artifactId>
+                <version>${vam.sam.core}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.teavamc</groupId>
+                <artifactId>vamc-sam-dubbo-utils</artifactId>
+                <version>${vam.sam.dubbo.untils}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.30</version>
             </dependency>
 
         </dependencies>

@@ -1,6 +1,4 @@
-package com.teavamc.vamcsam.api.common.enums;
-
-import com.teavamc.vamcsam.api.common.enums.IErrorCode;
+package com.teavamc.vamcsam.core.common.enums;
 
 import java.beans.ConstructorProperties;
 

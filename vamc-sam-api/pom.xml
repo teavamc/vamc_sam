@@ -20,5 +20,10 @@
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.teavamc</groupId>
+            <artifactId>vamc-sam-core</artifactId>
+        </dependency>
     </dependencies>
 </project>

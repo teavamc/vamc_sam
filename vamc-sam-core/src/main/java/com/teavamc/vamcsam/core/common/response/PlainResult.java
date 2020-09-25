@@ -1,6 +1,6 @@
-package com.teavamc.vamcsam.api.common.response;
+package com.teavamc.vamcsam.core.common.response;
 
-import com.teavamc.vamcsam.api.common.enums.IErrorCode;
+import com.teavamc.vamcsam.core.common.enums.IErrorCode;
 
 /**
  * @author 墨诚 mocheng@byai.com

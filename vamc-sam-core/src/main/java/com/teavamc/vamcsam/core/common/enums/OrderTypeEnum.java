@@ -1,4 +1,4 @@
-package com.teavamc.vamcsam.api.common.enums;
+package com.teavamc.vamcsam.core.common.enums;
 
 /**
  * @author 墨诚 mocheng@byai.com
