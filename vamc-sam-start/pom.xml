@@ -80,6 +80,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba.nacos/nacos-spring-context -->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-spring-context</artifactId>
+            <version>0.3.6</version>
+        </dependency>
     </dependencies>
 
 
