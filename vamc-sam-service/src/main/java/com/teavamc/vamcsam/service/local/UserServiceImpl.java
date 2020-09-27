@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import com.teavamc.vamcsam.dao.entity.UserDO;
 import com.teavamc.vamcsam.api.local.UserService;
-import com.teavamc.vamcsam.api.local.model.UserModel;
+import com.teavamc.vamcsam.api.entity.UserModel;
 
 import javax.annotation.Resource;
 

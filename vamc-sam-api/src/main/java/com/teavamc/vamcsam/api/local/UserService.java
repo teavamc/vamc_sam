@@ -1,7 +1,7 @@
 package com.teavamc.vamcsam.api.local;
 
 
-import com.teavamc.vamcsam.api.local.model.UserModel;
+import com.teavamc.vamcsam.api.entity.UserModel;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>

@@ -4,7 +4,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fastjson.JSONObject;
 import com.teavamc.vamcsam.core.common.response.PlainResult;
 import com.teavamc.vamcsam.api.local.UserService;
-import com.teavamc.vamcsam.api.local.model.UserModel;
+import com.teavamc.vamcsam.api.entity.UserModel;
 import com.teavamc.vamcsam.api.rpc.UserRpcService;
 import com.teavamc.vamcsam.service.factory.PlainResultFactory;
 import com.teavamc.vamsam.dubboutils.annotation.EnableErrorHandle;

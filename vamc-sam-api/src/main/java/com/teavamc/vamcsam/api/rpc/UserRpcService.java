@@ -1,7 +1,7 @@
 package com.teavamc.vamcsam.api.rpc;
 
 
-import com.teavamc.vamcsam.api.local.model.UserModel;
+import com.teavamc.vamcsam.api.entity.UserModel;
 import com.teavamc.vamcsam.core.common.response.PlainResult;
 
 /**

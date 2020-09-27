@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import com.teavamc.vamcsam.api.local.UserService;
-import com.teavamc.vamcsam.api.local.model.UserModel;
+import com.teavamc.vamcsam.api.entity.UserModel;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
