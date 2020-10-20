@@ -21,6 +21,7 @@
         <vam.sam.dubbo.untils>0.0.2</vam.sam.dubbo.untils>
         <vam.sam.start>0.0.2</vam.sam.start>
         <vam.sam.dao>0.0.2</vam.sam.dao>
+        <junit.version>4.12</junit.version>
     </properties>
 
     <modules>
@@ -153,6 +154,14 @@
                         <artifactId>log4j</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+
+<!--            单元测试-->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
             </dependency>
 
         </dependencies>
