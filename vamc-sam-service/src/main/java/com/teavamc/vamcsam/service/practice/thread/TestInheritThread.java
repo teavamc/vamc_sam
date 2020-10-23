@@ -2,11 +2,9 @@ package com.teavamc.vamcsam.service.practice.thread;
 
 import com.alibaba.fastjson.JSONObject;
 import com.teavamc.vamcsam.service.practice.tools.PrintTools;
-import sun.jvm.hotspot.runtime.BasicObjectLock;
 
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
