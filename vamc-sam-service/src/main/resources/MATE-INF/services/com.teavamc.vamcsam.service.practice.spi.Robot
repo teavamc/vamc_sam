@@ -1,2 +1,2 @@
-com.teavamc.vamcsam.service.practice.spi.DolaamengRobot
-com.teavamc.vamcsam.service.practice.spi.ZhongjiezheRobot
+com.teavamc.vamcsam.practice.spi.DolaamengRobot
+com.teavamc.vamcsam.practice.spi.ZhongjiezheRobot

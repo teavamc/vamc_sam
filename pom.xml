@@ -33,6 +33,7 @@
         <module>vamc-sam-web</module>
         <module>vamc-sam-deploy</module>
         <module>vamc-sam-dubbo-utils</module>
+        <module>vamc-sam-practice</module>
     </modules>
 
     <dependencyManagement>
