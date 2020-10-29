@@ -1,4 +1,4 @@
-package com.teavamc.vamcsam.service.practice.dependencyInject;
+package com.teavamc.vamcsam.service.practice.di;
 
 /**
  * @author 墨诚 mocheng@byai.com
