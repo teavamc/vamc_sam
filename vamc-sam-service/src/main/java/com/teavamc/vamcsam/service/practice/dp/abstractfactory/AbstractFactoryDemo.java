@@ -10,6 +10,10 @@ import com.teavamc.vamcsam.service.practice.dp.abstractfactory.settle.SettleHand
  * 抽象工厂模式
  *
  * 抽象工厂模式（Abstract Factory Pattern）是围绕一个超级工厂创建其他工厂。该超级工厂又称为其他工厂的工厂。
+ * 使用场景: 系统的产品有多于一个的产品族，而系统只消费其中某一族的产品。
+ * 示例的业务场景:
+ * 在治疗费用业务场景,存在两种产品族: order 医嘱订单 / settle 订单结算
+ * 通过 TreatFactoryProducer 工厂生产器选择具体工厂(产品族), 在从相应工厂中拿到具体的实现
  *
  * @author 墨诚 mocheng@byai.com
  * @Package com.teavamc.vamcsam.service.practice.dp.abstractfactory
