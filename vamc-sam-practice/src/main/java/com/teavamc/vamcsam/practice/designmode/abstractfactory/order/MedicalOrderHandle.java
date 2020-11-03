@@ -1,0 +1,15 @@
+package com.teavamc.vamcsam.practice.designmode.abstractfactory.order;
+
+import com.teavamc.vamcsam.practice.tools.commontools.PrintTools;
+
+/**
+ * @author 墨诚 mocheng@byai.com
+ * @Package com.teavamc.vamcsam.practice.dp.abstractfactory
+ * @date 2020/10/29 09:45
+ */
+public class MedicalOrderHandle implements OrderHandle {
+    @Override
+    public void doOrder() {
+        PrintTools.printInfo("开立药品医嘱");
+    }
+}

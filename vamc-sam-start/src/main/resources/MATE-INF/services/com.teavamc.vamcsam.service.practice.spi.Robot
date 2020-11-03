@@ -1,2 +1,2 @@
-com.teavamc.vamcsam.practice.spi.DolaamengRobot
-com.teavamc.vamcsam.practice.spi.ZhongjiezheRobot
+com.teavamc.vamcsam.practice.jdk.spi.DolaamengRobot
+com.teavamc.vamcsam.practice.jdk.spi.ZhongjiezheRobot
