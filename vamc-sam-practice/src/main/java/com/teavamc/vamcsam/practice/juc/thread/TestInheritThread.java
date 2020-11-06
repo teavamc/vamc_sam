@@ -1,4 +1,4 @@
-package com.teavamc.vamcsam.practice.concurrence.thread;
+package com.teavamc.vamcsam.practice.juc.thread;
 
 import com.alibaba.fastjson.JSONObject;
 import com.teavamc.vamcsam.practice.tools.commontools.PrintTools;
