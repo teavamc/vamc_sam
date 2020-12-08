@@ -1,6 +1,9 @@
-package com.teavamc.vamcsam.practice.jdk.lock;
+package com.teavamc.vamcsam.practice.juc.lock;
 
+import java.util.HashMap;
+import java.util.Stack;
 import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
@@ -9,6 +12,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @date 2020/10/24 11:24
  */
 public class TestReadWriteLock {
+
     public static void main(String[] args){
         ReadWriteLockDemo rwd = new ReadWriteLockDemo();
         //启动100个读线程

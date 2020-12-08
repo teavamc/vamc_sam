@@ -7,9 +7,9 @@ import com.teavamc.vamcsam.dao.entity.UserDO;
  */
 public interface UserMapper {
 
-    UserDO getByName(String name);
-
-    UserDO getById(Long id);
-
-    void insert(UserDO userDO);
+//    UserDO getByName(String name);
+//
+//    UserDO getById(Long id);
+//
+//    void insert(UserDO userDO);
 }

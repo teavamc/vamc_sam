@@ -1,7 +1,7 @@
 package com.teavamc.vamcsam.service.local;
 
 import com.alibaba.fastjson.JSONObject;
-import com.teavamc.vamcsam.dao.mapper.UserMapper;
+//import com.teavamc.vamcsam.dao.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cglib.beans.BeanCopier;
 import org.springframework.stereotype.Component;
@@ -19,22 +19,23 @@ import javax.annotation.Resource;
 @Component
 public class UserServiceImpl implements UserService {
 
-    @Resource
-    private UserMapper userMapper;
-
-    private static final BeanCopier copier = BeanCopier.create(UserModel.class, UserDO.class, false);
+//    @Resource
+//    private UserMapper userMapper;
+//
+//    private static final BeanCopier copier = BeanCopier.create(UserModel.class, UserDO.class, false);
 
     public String getUserName(Long id) {
-        UserDO userDO = userMapper.getById(id);
-        return userDO != null ? userDO.getName() : null;
+//        UserDO userDO = userMapper.getById(id);
+//        return userDO != null ? userDO.getName() : null;
+        return null;
     }
 
     public UserModel addUser(UserModel user) {
-        log.info(JSONObject.toJSONString(user));
-        UserDO userDO = new UserDO();
-        userDO.setName(user.getName());
-        userDO.setAge(user.getAge());
-        userMapper.insert(userDO);
-        return user;
+//        log.info(JSONObject.toJSONString(user));
+//        UserDO userDO = new UserDO();
+//        userDO.setName(user.getName());
+//        userDO.setAge(user.getAge());
+//        userMapper.insert(userDO);
+        return null;
     }
 }
