@@ -4,9 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /**
- * @author 墨诚 mocheng@byai.com
- * @Package com.teavamc.vamcsam.practice.hw
- * @date 2020/12/7 下午8:41
+ * 倒序输出
  */
 public class HJ106 {
 //    public static void main(String[] args) {
