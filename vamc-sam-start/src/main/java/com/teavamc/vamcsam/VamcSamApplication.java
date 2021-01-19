@@ -9,11 +9,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Slf4j
-//@EnableDubbo(scanBasePackages = {"com.teavamc.vamcsam.service.dubbo"})
+@EnableDubbo(scanBasePackages = {"com.teavamc.vamcsam.service.dubbo"})
 @SpringBootApplication
 //@NacosPropertySource(dataId = "vamc-sam", autoRefreshed = true)
-//@MapperScan("com.teavamc.vamcsam.dao")
-//@EnableDubboUtil
+@MapperScan("com.teavamc.vamcsam.dao")
+@EnableDubboUtil
 public class VamcSamApplication {
 
     public static void main(String[] args) {
